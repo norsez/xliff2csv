@@ -26,7 +26,6 @@
 /* Begin PBXFileReference section */
 		F393F09B1C6369D1000CE435 /* xliff2csv */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = xliff2csv; sourceTree = BUILT_PRODUCTS_DIR; };
 		F393F09E1C6369D1000CE435 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
-		F393F0A51C636BE1000CE435 /* nb.xliff */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = nb.xliff; sourceTree = "<group>"; };
 		F393F0A61C636F78000CE435 /* Xliff2CsvParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Xliff2CsvParser.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -46,7 +45,6 @@
 			children = (
 				F393F09D1C6369D1000CE435 /* xliff2csv */,
 				F393F09C1C6369D1000CE435 /* Products */,
-				F393F0A51C636BE1000CE435 /* nb.xliff */,
 			);
 			sourceTree = "<group>";
 		};

@@ -3,7 +3,6 @@
 //  xliff2csv
 //
 //  Created by Norsez Orankijanan on 2/4/16.
-//  Copyright © 2016 Startsiden. All rights reserved.
 //
 
 import Foundation
