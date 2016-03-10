@@ -7,11 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F340247F1C91319900FAA373 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = F340247E1C91319900FAA373 /* main.swift */; };
+		F34024841C9131BD00FAA373 /* Csv2XliffParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34024831C9131BD00FAA373 /* Csv2XliffParser.swift */; };
 		F393F09F1C6369D1000CE435 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = F393F09E1C6369D1000CE435 /* main.swift */; };
 		F393F0A71C636F78000CE435 /* Xliff2CsvParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = F393F0A61C636F78000CE435 /* Xliff2CsvParser.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		F340247A1C91319900FAA373 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 		F393F0991C6369D1000CE435 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -24,12 +35,23 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		F340247C1C91319900FAA373 /* csv2xliff */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = csv2xliff; sourceTree = BUILT_PRODUCTS_DIR; };
+		F340247E1C91319900FAA373 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		F34024831C9131BD00FAA373 /* Csv2XliffParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Csv2XliffParser.swift; sourceTree = "<group>"; };
+		F34024851C9133C900FAA373 /* TVGuide */ = {isa = PBXFileReference; lastKnownFileType = folder; name = TVGuide; path = ../../TVGuideLocalizations/TVGuide; sourceTree = "<group>"; };
 		F393F09B1C6369D1000CE435 /* xliff2csv */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = xliff2csv; sourceTree = BUILT_PRODUCTS_DIR; };
 		F393F09E1C6369D1000CE435 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		F393F0A61C636F78000CE435 /* Xliff2CsvParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Xliff2CsvParser.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		F34024791C91319900FAA373 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F393F0981C6369D1000CE435 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -40,11 +62,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F340247D1C91319900FAA373 /* csv2xliff */ = {
+			isa = PBXGroup;
+			children = (
+				F340247E1C91319900FAA373 /* main.swift */,
+				F34024831C9131BD00FAA373 /* Csv2XliffParser.swift */,
+			);
+			path = csv2xliff;
+			sourceTree = "<group>";
+		};
 		F393F0921C6369D1000CE435 = {
 			isa = PBXGroup;
 			children = (
 				F393F09D1C6369D1000CE435 /* xliff2csv */,
+				F340247D1C91319900FAA373 /* csv2xliff */,
 				F393F09C1C6369D1000CE435 /* Products */,
+				F34024851C9133C900FAA373 /* TVGuide */,
 			);
 			sourceTree = "<group>";
 		};
@@ -52,6 +85,7 @@
 			isa = PBXGroup;
 			children = (
 				F393F09B1C6369D1000CE435 /* xliff2csv */,
+				F340247C1C91319900FAA373 /* csv2xliff */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -68,6 +102,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		F340247B1C91319900FAA373 /* csv2xliff */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F34024801C91319900FAA373 /* Build configuration list for PBXNativeTarget "csv2xliff" */;
+			buildPhases = (
+				F34024781C91319900FAA373 /* Sources */,
+				F34024791C91319900FAA373 /* Frameworks */,
+				F340247A1C91319900FAA373 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = csv2xliff;
+			productName = csv2xliff;
+			productReference = F340247C1C91319900FAA373 /* csv2xliff */;
+			productType = "com.apple.product-type.tool";
+		};
 		F393F09A1C6369D1000CE435 /* xliff2csv */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = F393F0A21C6369D1000CE435 /* Build configuration list for PBXNativeTarget "xliff2csv" */;
@@ -95,6 +146,9 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = Startsiden;
 				TargetAttributes = {
+					F340247B1C91319900FAA373 = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
 					F393F09A1C6369D1000CE435 = {
 						CreatedOnToolsVersion = 7.2.1;
 					};
@@ -113,11 +167,21 @@
 			projectRoot = "";
 			targets = (
 				F393F09A1C6369D1000CE435 /* xliff2csv */,
+				F340247B1C91319900FAA373 /* csv2xliff */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+		F34024781C91319900FAA373 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F34024841C9131BD00FAA373 /* Csv2XliffParser.swift in Sources */,
+				F340247F1C91319900FAA373 /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F393F0971C6369D1000CE435 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -130,6 +194,20 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		F34024811C91319900FAA373 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F34024821C91319900FAA373 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		F393F0A01C6369D1000CE435 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -227,6 +305,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		F34024801C91319900FAA373 /* Build configuration list for PBXNativeTarget "csv2xliff" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F34024811C91319900FAA373 /* Debug */,
+				F34024821C91319900FAA373 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		F393F0961C6369D1000CE435 /* Build configuration list for PBXProject "xliff2csv" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -243,6 +329,7 @@
 				F393F0A41C6369D1000CE435 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

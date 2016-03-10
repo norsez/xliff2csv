@@ -115,9 +115,17 @@ class Xliff2CsvParser:NSObject, NSXMLParserDelegate {
     self.currentField = elementName
     switch elementName {
     case Field.file:
-      if let fileName = attributeDict["original"]{
-        self._startNewFile(withName: fileName)
+      var filename = ""
+      if let f = attributeDict["original"]{
+        filename = f
       }
+      
+      if let country = attributeDict["language"] {
+        filename = "\(filename).\(country)"
+      }
+      
+      self._startNewFile(withName: filename)
+      
       break
     case Field.trans_unit:
       self.currentTranslationUnit = [String:String]()
